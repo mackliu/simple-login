@@ -7,6 +7,11 @@
   <link rel="shortcut icon" href="#" type="image/x-icon">
   <title>尋回密碼</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+  h1{
+    text-shadow:0 0 0;
+  }
+  </style>
 </head>
 <body>
 <h1>找回密碼</h1>

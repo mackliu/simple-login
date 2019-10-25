@@ -10,6 +10,7 @@
   margin:30px  auto 0 auto;
   border:1px solid #999;
   padding:20px;
+  box-shadow:2px 2px 5px #ccc;
 }
 .wrapper{
   width:350px;
@@ -35,6 +36,7 @@
 h1{
   text-align: center;
   margin:150px auto 0 auto;
+  text-shadow: 2px 2px 5px #999;
 }
 .ct{
   text-align: center;
