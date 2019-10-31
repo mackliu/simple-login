@@ -38,7 +38,7 @@ if(empty($_SESSION['login'])){
 /*         $dsn="mysql:host=localhost;charset=utf8;dbname=mydb";
         $pdo=new PDO($dsn,'root','mack'); */
 
-        $sql="select * from user where id='".$_GET['id']."'";
+        $sql="select * from user where id='".$_SESSION['id']."'";
         //echo $sql;
         $user=$pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
         //print_r($user);

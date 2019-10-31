@@ -2,7 +2,7 @@
 
 session_start();
 if(!empty($_SESSION['login'])){
-  header("location:member_center.php?do=come");
+  header("location:member_center.php");
 }
 
 ?>
