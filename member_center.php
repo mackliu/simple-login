@@ -1,3 +1,4 @@
+<?php include "base.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,13 +23,14 @@
 <body>
   <div class="member">
     <div class="wellcome">
+ 
       HI! 歡迎光臨!以下是你的個人資料:
     </div>
     <div class="private">
       <!--請自行設計個人資料的呈現方式並從資料庫取得會員資料-->
       <?php
-        $dsn="mysql:host=localhost;charset=utf8;dbname=mydb";
-        $pdo=new PDO($dsn,'root','mack');
+/*         $dsn="mysql:host=localhost;charset=utf8;dbname=mydb";
+        $pdo=new PDO($dsn,'root','mack'); */
 
         $sql="select * from user where id='".$_GET['id']."'";
         //echo $sql;

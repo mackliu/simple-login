@@ -7,6 +7,8 @@
  * 4.比對表單資料和資料庫資料是否一致
  * 5.根據比對的結果決定畫面的行為
   ***************************************************/
+include "base.php";
+
 
 $acc=$_POST['acc'];
 $pw=$_POST['pw'];
@@ -15,8 +17,7 @@ echo "acc=".$acc;
 echo "<br>";
 echo "pw=".$pw;
 
-$dsn="mysql:host=localhost;charset=utf8;dbname=mydb";
-$pdo=new PDO($dsn,'root','mack');
+
 
 //$sql="select count(*) as 'r' from user where acc='$acc' &&  pw='$pw'";
 $sql="select id from user where acc='$acc' &&  pw='$pw'";
