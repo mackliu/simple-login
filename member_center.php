@@ -1,4 +1,10 @@
-<?php include "base.php";?>
+<?php
+  include_once "base.php";
+
+if(empty($_SESSION['login'])){
+  exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +29,7 @@
 <body>
   <div class="member">
     <div class="wellcome">
- 
+
       HI! 歡迎光臨!以下是你的個人資料:
     </div>
     <div class="private">
@@ -76,6 +82,8 @@
 
 
     </div>
+    <a href="index.php">回首頁</a>
   </div>
+
 </body>
 </html>

@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+if(!empty($_SESSION['login'])){
+  header("location:member_center.php?do=come");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +18,7 @@
 </head>
 <body>
   <?php
+
 if(!empty($_GET['s'])){
   echo "註冊成功，請輸入帳密以登入";
 }

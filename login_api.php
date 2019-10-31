@@ -30,6 +30,7 @@ print_r($data);
 
 if(!empty($data)){
   echo "登入成功";
+  $_SESSION['login']=1;
   header("location:member_center.php?id=".$data['id']);
 }else{
   echo "登入失敗";
