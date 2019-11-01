@@ -12,6 +12,6 @@ $sql="update user set name='$name',addr='$addr',tel='$tel',birthday='$birthday',
 
 $pdo->exec($sql);
 echo "<a href='member_center.php'>編輯完成，回會員中心</a>";
-header("location:member_center.php");
+//header("location:member_center.php");
 
 ?>
