@@ -44,7 +44,7 @@ foreach($rows as $user){
         <td><?=$user['addr'];?></td>
         <td><?=$user['tel'];?></td>
         <td><?=$user['email'];?></td>
-        <td><a href="del_user.php">刪除</a></td>
+        <td><a href="del_user.php?id=<?=$user['id'];?>">刪除</a></td>
     </tr>
 <?php
 }
