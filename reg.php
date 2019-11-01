@@ -42,7 +42,7 @@ if(!empty($_GET['s'])){
   </tr>
   <tr>
     <td>生日：</td>
-    <td><input type="date" name="date" id="date"></td>
+    <td><input type="date" name="birthday" id="birthday"></td>
   </tr>
   <tr>
     <td>電子郵件：</td>

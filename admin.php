@@ -2,8 +2,7 @@
 
 include_once "base.php";
 
-$sql="select * from user ";
-$rows=$pdo->query($sql)->fetchAll();  //取出全部的資料
+$rows=all("user");  //取出全部的資料
 ?>
 <!DOCTYPE html>
 <html lang="en">
