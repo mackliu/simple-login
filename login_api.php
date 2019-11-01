@@ -33,8 +33,8 @@ if(!empty($data)){
 /*   $_SESSION['login']=1;
   $_SESSION['id']=$data['id']; */
   //建立cookie
-  setcookie("login",1,time()+120);
-  setcookie("id",$data['id'],time()+120);
+  setcookie("login",1,time()+3600);
+  setcookie("id",$data['id'],time()+3600);
 
   header("location:member_center.php");
 }else{
